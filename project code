@@ -1,0 +1,117 @@
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+ 
+
+int main() {
+
+   int score = 0;
+
+   int answer;
+
+ 
+
+   cout <<"Welcome to the Quiz Application!"<< endl;
+
+   cout <<"Please answer the following questions by selecting the option number."<< endl;
+
+ 
+
+   // Question 1
+
+   cout <<"\n1. What is the capital of France?"<< endl;
+
+   cout <<"1) Berlin\n2) Madrid\n3) Paris\n4) Rome"<< endl;
+
+   cout <<"Your answer: ";
+
+   cin >> answer;
+
+   if (answer == 3) {
+
+       score++;
+
+       cout <<"Correct!"<< endl;
+
+   } else {
+
+       cout <<"Wrong! The correct answer is 3) Paris."<< endl;
+
+   }
+
+ 
+
+   // Question 2
+
+   cout <<"\n2. Which programming language is used for web development?"<< endl;
+
+   cout <<"1) Python\n2) JavaScript\n3) C++\n4) Java"<< endl;
+
+   cout <<"Your answer: ";
+
+   cin >> answer;
+
+   if (answer == 2) {
+
+       score++;
+
+       cout <<"Correct!"<< endl;
+
+   } else {
+
+       cout <<"Wrong! The correct answer is 2) JavaScript."<< endl;
+
+   }
+
+ 
+
+   // Question 3
+
+   cout <<"\n3. What is 5 + 3?"<< endl;
+
+   cout <<"1) 5\n2) 8\n3) 9\n4) 7"<< endl;
+
+   cout <<"Your answer: ";
+
+   cin >> answer;
+
+   if (answer == 2) {
+
+       score++;
+
+       cout <<"Correct!"<< endl;
+
+}  else
+
+       cout <<"Wrong! The correct answer is 2) 8."<< endl;
+
+ 
+
+ 
+
+   // Calculate and display performance feedback
+
+   cout <<"\nYour total score is: "<< score <<" out of 3."<< endl;
+
+ 
+
+   if (score == 3)
+
+       cout <<"Excellent! You got all the answers correct."<< endl;
+
+   else if (score == 2)
+
+       cout <<"Good job! You missed just one."<< endl;
+
+    else if (score == 1)
+
+       cout <<"You need to work harder. Keep practicing!"<< endl;
+
+ else
+
+       cout <<"Better luck next time! Try to improve your knowledge."<< endl;
+
+}
